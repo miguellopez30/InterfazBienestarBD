@@ -139,6 +139,86 @@ public class ConexionBD {
 
 ![image.png](image%206.png)
 
-# Funcionamiento de la interfaz
+# Funcionamiento y contenidos de la interfaz
 
-La interfaz se compone de una ventana de inicio de sesión llamada “Ventana”, en donde se pedirá el nombre de usuario y matrícula para
+La interfaz se compone de una ventana de inicio de sesión llamada “Ventana”, en donde se pedirá el nombre de usuario y matrícula para poder ingresar a la interfaz, de lo contrario no permitirá el acceso.
+
+**Diseño:**
+
+![image.png](image%207.png)
+
+Código:
+
+En esta interfaz no se hará gran cosa, solamente colocar las condiciones para que al colocar los elementos pedidos este pueda dar o no dar acceso a la interfaz
+
+```jsx
+private void btnAceptarActionPerformed(java.awt.event.ActionEvent evt) {                                           
+        // TODO add your handling code here:
+        String nombre = txtNombre.getText();
+        String matricula = txtMatricula.getText();
+        String usuario = "Miguel";
+        
+        if (!nombre.isEmpty()){ //AND OR NOT EN JAVA 
+           Inicio formulario = new Inicio();
+            formulario.setVisible(true);
+            this.dispose(); 
+        }
+    }             
+```
+
+**Interfaz “Inicio”**
+
+Esta es la interfaz principal en donde se todas las funciones se darán a funcionar por medio de los botones, incluyendo imágenes para darles un toque y estilo, incluyendo códigos y funciones para que al darles click nos lleven a las interfaces de la respectiva función.
+
+**Código de funciones:**
+
+```jsx
+private void btnDiarioActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        // TODO add your handling code here:
+        DiarioDB formulario = new DiarioDB();
+        formulario.setVisible(true);
+        this.dispose();
+    }                                         
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        Emocion formulario = new Emocion();
+        formulario.setVisible(true);
+        this.dispose();
+    }                                        
+
+    private void btnMeditarActionPerformed(java.awt.event.ActionEvent evt) {                                           
+        // TODO add your handling code here:
+        Meditar formulario = new Meditar();
+        formulario.setVisible(true);
+        this.dispose();
+    }                                          
+
+    private void btnActividadActionPerformed(java.awt.event.ActionEvent evt) {                                             
+        // TODO add your handling code here:
+        Actividad formulario = new Actividad();
+        formulario.setVisible(true);
+        this.dispose();
+    }                                            
+
+    private void btnImagenActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        // TODO add your handling code here:
+        Imagen formulario = new Imagen();
+        formulario.setVisible(true);
+        this.dispose();
+    }                                         
+
+    private void btnRecomendacionActionPerformed(java.awt.event.ActionEvent evt) {                                                 
+        // TODO add your handling code here:
+        Recomendacion formulario = new Recomendacion();
+        formulario.setVisible(true);
+        this.dispose();
+    }                                                
+
+```
+
+![image.png](image%208.png)
+
+![image.png](image%209.png)
+
+![image.png](image%2010.png)
