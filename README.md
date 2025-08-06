@@ -222,3 +222,87 @@ private void btnDiarioActionPerformed(java.awt.event.ActionEvent evt) {
 ![image.png](image%209.png)
 
 ![image.png](image%2010.png)
+
+**Interfaz Emociones:**
+
+En este apartado el usuario podrá elegir una de las ocho emociones planteadas en la interfaz por defecto, las cuales por medio de clases se conectarán a la clase “Emoción”, que es donde se da la función, y según la emoción, el programa le dará un consejo o frase motivadora a la persona con el fin de tratar de ayudarla a mejorar un poco su estado emocional si es negativo, y si es positivo, darle más ánimos para seguir adelante, esta función se compone por otras pequeñas interfaces de otras emociones que son: Feliz, asustado, nervioso, inspirado, enojado, curioso y triste.
+
+Diseño:
+
+![image.png](image%2011.png)
+
+Código:
+
+```jsx
+private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        // TODO add your handling code here:
+        Inicio formVent = new Inicio();
+        formVent.setVisible(true);
+        this.dispose();
+    }                                         
+
+    private void btnFelizActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    Feliz formulario = new Feliz();
+    formulario.setVisible(true);
+    this.dispose();
+        // TODO add your handling code here:
+    }                                        
+
+    private void btnAsustadoActionPerformed(java.awt.event.ActionEvent evt) {                                            
+        // TODO add your handling code here:
+        Asustado formulario = new Asustado();
+    formulario.setVisible(true);
+    this.dispose();
+    }                                           
+
+    private void btnTristeActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        // TODO add your handling code here:
+        Triste formulario = new Triste();
+        formulario.setVisible(true);
+        this.dispose();
+    }                                         
+
+    private void btnInspiradoActionPerformed(java.awt.event.ActionEvent evt) {                                             
+        // TODO add your handling code here:
+       Inspirado formulario = new Inspirado();
+       formulario.setVisible(true);
+       this.dispose();
+    }                                            
+
+    private void btnEnojadoActionPerformed(java.awt.event.ActionEvent evt) {                                           
+        // TODO add your handling code here:
+    Enojado formulario = new Enojado();
+    formulario.setVisible(true);
+    this.dispose();
+    }                                          
+
+    private void btnCuriosoActionPerformed(java.awt.event.ActionEvent evt) {                                           
+        // TODO add your handling code here:
+    Curioso formulario = new Curioso();
+    formulario.setVisible(true);
+    this.dispose();
+    }                                          
+
+    private void btnSadActionPerformed(java.awt.event.ActionEvent evt) {                                       
+        // TODO add your handling code here:
+    Sad formulario = new Sad();
+    formulario.setVisible(true);
+    this.dispose();
+    }                                            
+```
+
+![image.png](image%2012.png)
+
+Todas las clases de las emociones tienen el mismo código y función, pero cambiando unicamente el nombre de la emoción, por lo que ahora solo se mostrará un ejemplo, pero el procedimiento para el resto es el mismo, solo cambiando el nombre de la emoción.
+
+![image.png](image%2013.png)
+
+```jsx
+private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        // TODO add your handling code here:
+        Emocion formVent = new Emocion();
+        formVent.setVisible(true);
+        this.dispose();
+    }                                         
+
+```
