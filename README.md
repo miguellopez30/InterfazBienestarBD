@@ -1,6 +1,6 @@
 # Proyecto Interfaz de Bienestar para Jóvenes Universitarios
 
-## 🛑 ¿Por qué no se puede convertir directamente un formulario de Java a HTML?
+## 🛑 ¿Por qué no se puede convertir directamente un formulario de Java a HTML (servidor)?
 
 En el desarrollo de software, los formularios son una parte fundamental para capturar datos del usuario. Sin embargo, no todos los formularios se crean igual. Un formulario hecho en Java usando Swing en NetBeans **no puede convertirse automáticamente a HTML**, ya que ambas tecnologías operan en entornos y lenguajes completamente distintos.
 
@@ -293,7 +293,7 @@ private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {
 
 ![image.png](image%2012.png)
 
-Todas las clases de las emociones tienen el mismo código y función, pero cambiando unicamente el nombre de la emoción, por lo que ahora solo se mostrará una imagen de ejemplo, pero el procedimiento para el resto es el mismo, solo cambiando el nombre de la emoción.
+Todas las clases de las emociones tienen el mismo código y función, pero cambiando unicamente el nombre de la emoción, para posteriormente dar un consejo:
 
 ![image.png](image%2013.png)
 
@@ -580,11 +580,15 @@ public class DiarioDB extends javax.swing.JFrame {
 
 ```
 
+![image.png](image%2015.png)
+
+![image.png](image%2016.png)
+
 **Meditar:**
 
 En este apartado se dará por medio de las interfaces una pequeña guía de cinco pasos para poder hacer una meditación que ayude a relajar al usuario, con una interfaz que dará la bienvenida al usuario y unas instrucciones antes de comenzar, con un botón que diga comenzar y después las ventanas tendrán una imagen, los textos de las instrucciones y dos botones, uno que irá a la siguiente diapositiva y otro que volverá, una vez acabado el paso final, habrá un botón que llevará a la ventana de Inicio de nuevo.
 
-![image.png](image%2015.png)
+![image.png](image%2017.png)
 
 ```jsx
 private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {                                          
@@ -604,15 +608,15 @@ private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {
 
 Paso 1 2 3 4 5:
 
-![image.png](image%2016.png)
-
-![image.png](image%2017.png)
-
 ![image.png](image%2018.png)
 
 ![image.png](image%2019.png)
 
 ![image.png](image%2020.png)
+
+![image.png](image%2021.png)
+
+![image.png](image%2022.png)
 
 ```jsx
 private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {                                          
@@ -689,3 +693,140 @@ private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {
 
     
 ```
+
+**Actividades:**
+
+Este apartado se centra más que nada en algunas pequeñas actividades que el usuario podrá realizar para controlar y manejar su estado de ánimo y con ello, tener una pequeña ayuda, al oprimir el botón actividades este lo llevará a una ventana con 4 pequeñas actividades y al apretar su botón saldrá una ventana con 3 pequeños y sencillos pasos para realizar esa actividad, las actividades colocadas aquí son:
+
+-Diario
+
+-Ejercicio de respirar
+
+-Semaforo
+
+-Creativa
+
+![image.png](image%2023.png)
+
+Codigo:
+
+```jsx
+ private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        // TODO add your handling code here:
+        Inicio formVent = new Inicio();
+        formVent.setVisible(true);
+        this.dispose();
+    }                                         
+
+    private void btnDiarioActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        // TODO add your handling code here:
+        Di formulario = new Di();
+        formulario.setVisible(true);
+        this.dispose();
+    }                                         
+
+    private void btnRespirarActionPerformed(java.awt.event.ActionEvent evt) {                                            
+        // TODO add your handling code here:
+        Respirar formulario = new Respirar();
+        formulario.setVisible(true);
+        this.dispose();
+    }                                           
+
+    private void btnSemaforoActionPerformed(java.awt.event.ActionEvent evt) {                                            
+        // TODO add your handling code here:
+        Semaforo formulario = new Semaforo();
+        formulario.setVisible(true);
+        this.dispose();
+    }                                           
+
+    private void btnCreativaActionPerformed(java.awt.event.ActionEvent evt) {                                            
+        // TODO add your handling code here:
+        Creativa formulario = new Creativa();
+        formulario.setVisible(true);
+        this.dispose();
+    }                                
+```
+
+Diseño de interfaces de Actividades:
+
+![image.png](image%2024.png)
+
+```jsx
+private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        // TODO add your handling code here:
+        Actividad formulario = new Actividad();
+        formulario.setVisible(true);
+        this.dispose();
+    }      
+```
+
+![image.png](image%2025.png)
+
+```jsx
+private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        // TODO add your handling code here:
+        Actividad formulario = new Actividad();
+        formulario.setVisible(true);
+        this.dispose();
+    }      
+```
+
+![image.png](image%2026.png)
+
+```jsx
+private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        // TODO add your handling code here:
+        Actividad formulario = new Actividad();
+        formulario.setVisible(true);
+        this.dispose();
+    }              
+```
+
+![image.png](image%2027.png)
+
+```jsx
+private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        // TODO add your handling code here:
+        Actividad formulario = new Actividad();
+        formulario.setVisible(true);
+        this.dispose();
+    }     
+```
+
+**Imagenes:**
+
+Este apartado sirve como una galería de imágenes relajantes y calmadas para que el usuario pueda verlas y sentir un sentimiento de calma, confort, relajación, entre otros sentimientos positivos, su realización fue usar JLabel para poder ingresar las imágenes ahí, pero anteriormense se usó power point para diseñarlas por diapositivas, para que de esta forma ingresemos las imágenes en sus respectivos tamaños para que no sean más grandes o más pequeñas (como suele ser el tamaño original) también se usó Power Point para ingresar las imágenes e íconos en todas las demas interfaces como en los íconos/logos de la interfaz principal, el logo, los emojis en la interfaz de Emociones, las imágenes como instrucciones en meditación y las imágenes usadas en los íconos de Actividades, y también para promocionar algunos canales, podcast, etc en Recomendaciones.
+
+![image.png](image%2028.png)
+
+En este apartado no hubo mucha codificación, ya que este apartado se centra principalmente en el añadido de imágenes, lo único que se codificó fue el botón de return para regresar a la interfaz principal:
+
+```jsx
+private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        // TODO add your handling code here:
+        Inicio formVent = new Inicio();
+        formVent.setVisible(true);
+        this.dispose();
+    }      
+```
+
+**Recomendaciones:**
+
+Este apartado como el último se enfoca en recomendar algunos otros canales, medios, podcast, etc, de otras personas que aplican actividades, consejos psicológicos, consejos, guiar paso a paso, frases motivadoras, entre otras cosas, esto con el fin de promocionar a otras personas que hacen estas cosas y de esta forma el usuario pueda ingresar a estos canales y medios paras obtener una mejor ayuda más profunda en ese apartado de ser necesario.
+
+Tampoco hubo mucha codificación aqui ya que además de las imágenes, también se agregaron textos para dar el contexto del canal, a que se dedica, etc.
+
+![image.png](image%2029.png)
+
+```jsx
+ private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        // TODO add your handling code here:
+        Inicio formVent = new Inicio();
+        formVent.setVisible(true);
+        this.dispose();
+    }                   
+```
+
+Como conclusión el proyecto incluye temas anteriormente vistos en clase como: Interfaces, Interacción, Programación Orientada a Objetos, Imágenes, manejo de clases, uso de los botones y JLabel, diseño, condiciones, entre otras, además de cumplir con su función de servir para los jóvenes universitarios.
+
+No se pudo enviar el proyecto en HTML o servidor web porque son diferentes entornos y lenguajes, lo mismo aplica para las bases de datos hechas en Xampp MYSQL, pero el proyecto se realizó y se terminó
