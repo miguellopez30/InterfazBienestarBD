@@ -830,3 +830,5 @@ Tampoco hubo mucha codificación aqui ya que además de las imágenes, también 
 Como conclusión el proyecto incluye temas anteriormente vistos en clase como: Interfaces, Interacción, Programación Orientada a Objetos, Imágenes, manejo de clases, uso de los botones y JLabel, diseño, condiciones, entre otras, además de cumplir con su función de servir para los jóvenes universitarios.
 
 No se pudo enviar el proyecto en HTML o servidor web porque son diferentes entornos y lenguajes, lo mismo aplica para las bases de datos hechas en Xampp MYSQL, pero el proyecto se realizó y se terminó
+
+Proyecto:
